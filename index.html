@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gateway to IT - Community for Junior Techies</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  
+    <!-- Google Fonts Preload Link for Poppins and Roboto Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap">
+  
+    <style>
+      /* Apply Roboto Mono to the body */
+      body {
+        font-family: 'Roboto Mono', monospace; /* Default body font */
+      }
+  
+      /* Apply Poppins to headings */
+      .montserrat-heading {
+        font-family: 'Poppins', sans-serif; /* Poppins for headings */
+        font-size: 70px;
+        font-weight: 700;
+        color: white;
+      }
+  
+      /* Specific body text style */
+      .roboto-mono-body {
+        font-family: 'Roboto Mono', monospace; /* For text that needs monospace */
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+      }
+  
+      .gradient-overlay {
+        background: linear-gradient(90deg, 
+          rgba(0,0,0,0.9) 0%, 
+          rgba(0,0,0,0.2) 50%, 
+          rgba(0,0,0,0.9) 100%);
+      }
+          
+      .vertical-gradient {
+        background: linear-gradient(180deg, 
+          rgba(0,0,0,0.9) 0%, 
+          rgba(0,0,0,0.2) 50%, 
+          rgba(0,0,0,0.9) 100%);
+      }
+          
+      .hover-lift {
+        transition: transform 0.2s;
+      }
+          
+      .hover-lift:hover {
+        transform: translateY(-4px);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-black">
+    <div class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <div class="absolute inset-0 gradient-overlay opacity-80 z-10"></div>
+        <div class="absolute inset-0 vertical-gradient opacity-70 z-10"></div>
+        <img src="gate.jpg" alt="Gateway" class="w-full h-full object-cover object-center filter brightness-50">
+      </div>
+  
+      <div class="relative z-20">
+        <div class="container mx-auto px-4 py-16">
+          <div class="max-w-4xl mx-auto text-center space-y-8 mt-24">
+            <h1 class="montserrat-heading">Gateway to <span class="text-blue-400">IT</span></h1>
+            
+            <p class="roboto-mono-body"> 
+              A community where junior techies connect, collaborate, and grow together. 
+              Showcase your skills, practice with peers, and build your future in tech. 
+              Your portal to the world of Information Technology. Where innovation meets opportunity.
+            </p>
+  
+            <div class="space-x-4">
+              <button class="hover-lift bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded">
+                Join Community
+              </button>
+              <button class="hover-lift border border-blue-400 hover:bg-blue-900 hover:bg-opacity-20 text-blue-200 font-bold py-3 px-8 rounded">
+                View Projects
+              </button>
+            </div>
+          </div>
+                  
+          <!-- Community Values -->
+          <div class="mt-32">
+            <h2 class="montserrat-heading text-4xl font-bold text-center text-white mb-16">Our Community Values</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="bg-black bg-opacity-40 p-8 rounded border border-blue-900 hover:border-blue-600 transition-colors">
+                <h3 class="text-2xl font-bold text-blue-100 mb-4">Learning Together</h3>
+                <p class="text-blue-300">We believe in the power of shared knowledge. No question is too basic, and every challenge is an opportunity to learn.</p>
+              </div>
+              <div class="bg-black bg-opacity-40 p-8 rounded border border-blue-900 hover:border-blue-600 transition-colors">
+                <h3 class="text-2xl font-bold text-blue-100 mb-4">Supporting Growth</h3>
+                <p class="text-blue-300">Everyone starts somewhere. We celebrate progress, not perfection, and support each other's learning journey.</p>
+              </div>
+              <div class="bg-black bg-opacity-40 p-8 rounded border border-blue-900 hover:border-blue-600 transition-colors">
+                <h3 class="text-2xl font-bold text-blue-100 mb-4">Inclusive Space</h3>
+                <p class="text-blue-300">Tech is for everyone. We welcome all backgrounds, skill levels, and perspectives in our community.</p>
+              </div>
+              <div class="bg-black bg-opacity-40 p-8 rounded border border-blue-900 hover:border-blue-600 transition-colors">
+                <h3 class="text-2xl font-bold text-blue-100 mb-4">Building Together</h3>
+                <p class="text-blue-300">Collaboration over competition. We share resources, provide feedback, and celebrate each other's wins.</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Community Features -->
+          <div class="grid md:grid-cols-3 gap-8 mt-32">
+            <div class="bg-black bg-opacity-40 p-8 rounded border border-blue-900 hover:border-blue-600 transition-colors cursor-pointer">
+              <h3 class="text-2xl font-bold text-blue-100 mb-4">Practice Together</h3>
+              <p class="text-blue-300">Join coding sessions, pair programming, and group projects with fellow junior developers</p>
+            </div>
+            <div class="bg-black bg-opacity-40 p-8 rounded border border-blue-900 hover:border-blue-600 transition-colors cursor-pointer">
+              <h3 class="text-2xl font-bold text-blue-100 mb-4">Showcase Skills</h3>
+              <p class="text-blue-300">Display your projects, share your learning journey, and build a portfolio within our community</p>
+            </div>
+            <div class="bg-black bg-opacity-40 p-8 rounded border border-blue-900 hover:border-blue-600 transition-colors cursor-pointer">
+              <h3 class="text-2xl font-bold text-blue-100 mb-4">Connect</h3>
+              <p class="text-blue-300">Connect with other junior techies, share experiences, and grow your professional network</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Footer -->
+        <footer class="mt-32 text-center text-white border-t border-blue-900 pt-8 pb-8">
+          <div class="container mx-auto px-4">
+            <p class="text-sm">Join our community of aspiring tech professionals</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  
+  
+  </body></html>
