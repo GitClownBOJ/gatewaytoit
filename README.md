@@ -1,41 +1,19 @@
-# Gateway to IT
+# Dev branch
 
-## About the Project
+This branch is used to test the code before merging it to main (production).
 
-Gateway to IT is a community platform designed to support and empower junior tech professionals. Our mission is to create an inclusive, collaborative space where aspiring developers can learn, grow, and connect.
+## Branching
 
-## Community Values
+For each feature we will work on we create a seperate branch with
 
-- **Learning Together**: No question is too basic, every challenge is a learning opportunity
-- **Supporting Growth**: Celebrate progress, not perfection
-- **Inclusive Space**: Tech is for everyone, regardless of background or skill level
-- **Building Together**: Collaboration over competition
+```bash
+git checkout -b <branch Name>
+```
 
-## Key Features
+and when tested and finished we will merge it via Pull requests and someone else should review the code if possible. Difficult in a 2 people project maybe.
 
-- Practice sessions
-- Project showcasing
-- Professional networking
-- Peer learning opportunities
+**PRs are always merged into develop**
 
-## Getting Started
+and if it all works fine with the other code then we can merge it to main (production)
 
-### Prerequisites
-
-- Web browser
-- Enthusiasm for learning tech!
-
-## Roadmap
-
-- [ ] Implement user authentication
-- [ ] Create project submission system
-- [ ] Add mentorship matching
-- [ ] Develop community forums
-
-## Contact
-
-- Project Link: https://github.com/GitClownBOJ/gatewaytoit
-
-## Notes
-
-There will be more technical details in the dev documentations.
+We will setup some workflows with checks to prevent the worst :smile:
