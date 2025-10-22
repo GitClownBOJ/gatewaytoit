@@ -1,4 +1,4 @@
-# Gateway to IT 
+# Gateway to IT
 
 ## About the Project
 
@@ -35,3 +35,7 @@ Gateway to IT is a community platform designed to support and empower junior tec
 ## Contact
 
 - Project Link: https://github.com/GitClownBOJ/gatewaytoit
+
+## Notes
+
+There will be more technical details in the dev documentations.
