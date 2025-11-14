@@ -1,14 +1,11 @@
-import picture from './assets/gate.jpg'
 import './App.css'
+import LandingPage from './pages/LandingPage'
 
 function App() {
 
   return (
     <>
-      <p>
-        Here will be the frontend for GatewayToIT
-      </p>
-      <img src={picture} alt="GatewayToIT" />
+      <LandingPage />
     </>
   )
 }
