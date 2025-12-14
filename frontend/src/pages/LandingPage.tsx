@@ -1,4 +1,4 @@
-import "./GatewayLandingPage.css";
+import "../App.css";
 
 export default function GatewayLandingPage() {
   const buttons = ["Start Learning", "Build Projects", "Community"];  
