@@ -4,5 +4,8 @@
   font-weight: 400;
 
   color: rgba(0, 69, 42, 0.87);
-  background-color: #ffffff;
+  background-color: #000000;
+
+  width: 100%;
+  min-height: 100vh;
 }
