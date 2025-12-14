@@ -1,4 +1,3 @@
-import React from "react";
 import "./GatewayLandingPage.css";
 
 export default function GatewayLandingPage() {
