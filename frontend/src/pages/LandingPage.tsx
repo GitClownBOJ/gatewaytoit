@@ -1,8 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./GatewayLandingPage.css";
 
 export default function GatewayLandingPage() {
-  const buttons = ["Start Learning", "Build Projects", "Community"];  
+  const navigate = useNavigate();
+  
+  const buttons = [
+    { label: "Start Learning", path: "/learning" },
+    { label: "Build Projects", path: "/projects" },
+    { label: "Community", path: "/community" }
+  ];  
   const values = [
     { title: "Shared knowledge", text: "No question is too basic, and every challenge is an opportunity to learn." },
     { title: "Everyone starts somewhere", text: "We celebrate progress, not perfection, and support each other's learning journey." },
@@ -11,9 +18,9 @@ export default function GatewayLandingPage() {
   ];
 
   const features = [
-    { title: "Practice Together", text: "Join coding sessions, educational dialogue, and group projects." },
-    { title: "Showcase Skills", text: "Share projects, track your learning, and build a portfolio." },
-    { title: "Connect", text: "Meet other junior techies and grow your network." }
+    { title: "Practice Together", text: "Join coding sessions, educational dialogue, and group projects.", path: "/learning" },
+    { title: "Showcase Skills", text: "Share projects, track your learning, and build a portfolio.", path: "/projects" },
+    { title: "Connect", text: "Meet other junior techies and grow your network.", path: "/community" }
   ];
 
   return (
@@ -31,8 +38,14 @@ export default function GatewayLandingPage() {
           </p>
 
           <div className="button-row">
-            {buttons.map((b, i) => (
-              <button key={i} className="glow-button">{b}</button>
+            {buttons.map((btn, i) => (
+              <button 
+                key={i} 
+                className="glow-button"
+                onClick={() => navigate(btn.path)}
+              >
+                {btn.label}
+              </button>
             ))}
           </div>
         </section>
@@ -57,7 +70,12 @@ export default function GatewayLandingPage() {
 
           <div className="card-grid features-grid">
             {features.map((f, i) => (
-              <div key={i} className="glass-card clickable">
+              <div 
+                key={i} 
+                className="glass-card clickable"
+                onClick={() => navigate(f.path)}
+                style={{ cursor: 'pointer' }}
+              >
                 <h3 className="card-title">{f.title}</h3>
                 <p className="card-text">{f.text}</p>
               </div>
