@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./GatewayLandingPage.css";
+import "../App.css";
 
 export default function GatewayLandingPage() {
   const navigate = useNavigate();
