@@ -1,12 +1,17 @@
 import './App.css'
+import { Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
+import { LoginPage } from './pages/LoginPage'
+import PublicLayout from './layouts/PublicLayout'
 
 function App() {
-
   return (
-    <>
-      <LandingPage />
-    </>
+    <Routes>
+      <Route element={<PublicLayout />}>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Route>
+    </Routes>
   )
 }
 
