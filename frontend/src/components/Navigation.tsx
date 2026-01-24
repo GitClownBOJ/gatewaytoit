@@ -12,6 +12,9 @@ export default function Navigation() {
 
   const publicLinks = [
     { path: '/', label: 'Home' },
+    { path: '/start-learning', label: 'Start Learning' },
+    { path: '/build-projects', label: 'Build Projects' },
+    { path: '/community', label: 'Community' },
   ]
 
   const privateLinks = [
