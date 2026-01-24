@@ -5,10 +5,10 @@ export default function GatewayLandingPage() {
   const navigate = useNavigate();
   
   const buttons = [
-    { label: "Start Learning", path: "/learning" },
-    { label: "Build Projects", path: "/projects" },
-    { label: "Community", path: "/community" }
-  ];  
+  { label: "Start Learning", path: "/start-learning" },
+  { label: "Build Projects", path: "/build-projects" },
+  { label: "Community", path: "/community" }
+]; 
   const values = [
     { title: "Shared knowledge", text: "No question is too basic, and every challenge is an opportunity to learn." },
     { title: "Everyone starts somewhere", text: "We celebrate progress, not perfection, and support each other's learning journey." },
@@ -17,8 +17,8 @@ export default function GatewayLandingPage() {
   ];
 
   const features = [
-    { title: "Practice Together", text: "Join coding sessions, educational dialogue, and group projects.", path: "/learning" },
-    { title: "Showcase Skills", text: "Share projects, track your learning, and build a portfolio.", path: "/projects" },
+    { title: "Practice Together", text: "Join coding sessions, educational dialogue, and group projects.", path: "/start-learning" },
+    { title: "Showcase Skills", text: "Share projects, track your learning, and build a portfolio.", path: "/build-projects" },
     { title: "Connect", text: "Meet other junior techies and grow your network.", path: "/community" }
   ];
 
